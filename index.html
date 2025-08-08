@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SMK DevOps Challenge</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> Selamat Datang di Challenge DevOps!</h1>
+        <p>Nama: [isi namamu] </p>
+        <p>Kelas: [isi kelas] </p>
+        <p>Deployed with: Ansible + Docker + Kubernetes</p>
+        <p>Timestamp: <span id="time"></span></p>
+    </div>
+    <script>
+        document.getElementById('time').innerHTML = new Date().toLocaleString();
+    </script>
+</body>
+</html>
